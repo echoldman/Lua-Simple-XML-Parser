@@ -1,5 +1,3 @@
-module(..., package.seeall)
-
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 --
@@ -78,7 +76,7 @@ function newParser()
                 local lNode = newNode(label)
                 self:ParseArgs(lNode, xarg)
                 table.insert(stack, lNode)
-		top = lNode
+                top = lNode
             else -- end tag
                 local toclose = table.remove(stack) -- remove top
 
@@ -167,3 +165,9 @@ function newNode(name)
 
     return node
 end
+
+local xmlSimple = { newParser = newParser,
+                    newNode   = newNode }
+return xmlSimple
+
+

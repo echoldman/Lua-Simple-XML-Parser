@@ -1,3 +1,7 @@
+# About this fork
+This fork is source from <https://github.com/Cluain/Lua-Simple-XML-Parser>
+And use a table 'xmlSimple' to replace the 'module' function as the module entry, it can work at Lua 5.3.1
+
 # Installation
 
 1.  Copy the xmlSimple.lua file to your project.
@@ -44,3 +48,5 @@ Please take a loook at xmlTest.lua for an example of use.
 # Final notes
 
 This is a modified version of [Corona-XML-Module](https://github.com/jonbeebe/Corona-XML-Module) by Jonathan Beebe which in turn is based on Alexander Makeev's Lua-only XML parser found [here](http://lua-users.org/wiki/LuaXml)
+
+
